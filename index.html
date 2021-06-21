@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="script.js" type="text/javascript" defer></script>
-    <title>Gestión de Productos</title>
+	<meta charset="utf-8">
+	<title>Gestión de Productos</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-    <div id="contenedor">
-        <div id="encabezado">
-            <h1>Sistema de Gestión de Productos</h1>
-        </div>
-        <ul id="menu">
-            <li><a href="#" onclick="cargarPlantilla('inicio.html')">Inicio</a></li>
-            <li><a href="#" onclick="cargarPlantilla('agregar.html')">Agregar</a></li>
-            <li><a href="#" onclick="cargarMostrar('mostrar.html')">Mostrar</a></li>
-            <li><a href="#" onclick="cargarActualizar('actualizar.html')">Actualizar</a></li>
-            <li><a href="#" onclick="cargarPlantilla('agregar.html')">Borrar</a></li>
-            <li><a href="#" onclick="cargarMostrar()">Buscar</a></li>
-        </ul>
-        <div id="contenido">
-            <h2 id="titulo">Titulo de Página</h2>
-            <div id="contenido2">
-                <p>Contenido de la página</p>
-            </div>
-        </div>
-    </div>
-    
+	<div id="contenedor">
+		<div id="encabezado">
+			<h1>Sistema de Gestión de Productos</h1>
+		</div>
+		<ul id="menu">
+			<li><a href="#" onclick="cargarPlantilla('inicio.html')">Inicio</a></li>
+			<li><a href="#" onclick="cargarPlantilla('agregar.html')">Agregar</a></li>
+			<li><a href="#" onclick="cargarMostrar()">Mostrar</a></li>
+			<li><a href="#" onclick="mostrarSelect()">Actualizar</a></li>
+			<li><a href="#" onclick="mostrarSelectDos()">Borrar</a></li>
+			<li><a href="#" onclick="cargarBuscar()">Buscar</a></li>
+		</ul>
+		<div id="contenido">
+			<h2 id="titulo">Título de Página</h2>
+			<div id="contenido2">
+				<p>Contenido de la página</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js" type="text/javascript "></script>
 </body>
 </html>

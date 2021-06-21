@@ -1,8 +1,9 @@
 <?php 
 	require_once "Conexion.php";
 	$conexion = new Conexion(); 
-	$conexion->abrir();  
-	$productos = $conexion->obtenerProductos();
+	$conexion->abrir();
+	$busqueda = $_GET["buscar"];
+	$productos = $conexion->buscarProducto($busqueda);
 	$conexion->cerrar();
 	$respuesta = array();
 	if (count($productos) > 0) 
